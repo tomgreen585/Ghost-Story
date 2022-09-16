@@ -1,0 +1,55 @@
+/* Code for lecture 5 
+ * Name:pondy
+ */
+
+import comp102.*;
+import java.util.*;
+import java.io.*;
+import java.awt.Color;
+
+/** Draws little pictures on the graphics pane
+ */
+public class Drawer{
+
+    public void faceWithHat(){
+        UI.setColor(Color.orange); // set color to orange
+        UI.fillOval(200,100,100, 150);// draw oval @(200,100)  100x150 
+        UI.setColor(Color.green);// set color to green
+        UI.fillRect(205,90, 90, 50);// draw rectangle   @(200,90)     100x50
+        UI.drawLine(180,140, 320, 140);// draw line            (180,140)   to  (320, 140)
+
+    }
+
+    public void faceWithHat2(){
+        double center = 150;	// horizontal center of face
+        double top =    100;	// top of face
+        double faceWd = 200;	
+        double faceHt = 1.5 * faceWd;	
+        double hatHt =  0.5 * faceHt;	
+        double hatWd  = 0.9 * faceWd;
+        double brimWd = 1.6 * hatWd;	
+        double brimY =  top + 0.25 * faceHt;	
+        UI.setColor(Color.orange);	
+        UI.fillOval(center-faceWd/2, top, faceWd, faceHt);	          // face
+        UI.setColor(Color.green);	
+        UI.fillRect(center-hatWd/2, brimY-hatHt, hatWd, hatHt); // hat crown
+        UI.drawLine(center-brimWd/2, brimY, center+brimWd/2, brimY);//brim 
+    }
+
+    /** Draw an orange face with a brimmed hat*/
+    public void faceWithHat4( double center, double top, double faceWd ){
+        double faceHt =   1.5 * faceWd;	
+        double hatHt =     0.3 * faceHt;	
+        double hatWd  =  0.96 * faceWd;
+        double brimWd = 1.6 * hatWd;	
+        double brimY =    top + 0.25 * faceHt;	
+        UI.setColor(Color.orange);	
+        UI.fillOval(center-faceWd/2, top, faceWd, faceHt);	            // face
+        UI.setColor(Color.green);	
+        UI.fillRect(center-hatWd/2, brimY-hatHt, hatWd, hatHt);    // hat crown
+        UI.drawLine(center-brimWd/2, brimY, center+brimWd/2, brimY);//brim 
+    }
+
+    
+    
+}

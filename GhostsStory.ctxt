@@ -1,0 +1,33 @@
+#BlueJ class context
+comment0.target=GhostsStory
+comment1.params=
+comment1.target=void\ many()
+comment10.params=g1\ g2
+comment10.target=double\ getDistance(Ghost,\ Ghost)
+comment10.text=\r\n\ Get\ the\ distance\ between\ two\ ghosts\ (using\ the\ middle\ of\ the\ ghosts)\r\n\ \ \ \ using\ Pythagoras\ (a*a\ +\ b*b\ \=\ c*c\ <\=>\ c\ \=\ sqrt(a*a\ +\ b*b))\ \r\n\ @param\ g1\ Ghost\ \#1\r\n\ @param\ g2\ Ghost\ \#2\r\n
+comment11.params=g1\ g2
+comment11.target=boolean\ ghostCollide(Ghost,\ Ghost)
+comment11.text=\r\n\ Two\ squares\ don't\ collide\ if\r\n\ \ \ \ one\ of\ them\ is\ to\ the\ left\ of\ the\ other,\ or\r\n\ \ \ \ one\ of\ them\ is\ below\ the\ other\r\n\ \ \ \ \r\n\ Inspired\ by\:\ https\://www.geeksforgeeks.org/find-two-rectangles-overlap/\r\n
+comment12.params=
+comment12.target=void\ setupGUI()
+comment13.params=args
+comment13.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ manyUserGivenPostions()
+comment3.params=
+comment3.target=void\ manyRandom()
+comment4.params=g
+comment4.target=void\ randomGhostType(Ghost)
+comment5.params=
+comment5.target=void\ many2D()
+comment6.params=g\ count
+comment6.target=void\ moveSquare(Ghost,\ int)
+comment7.params=g\ count\ ghosts
+comment7.target=void\ moveSquareAware(Ghost,\ int,\ java.util.ArrayList)
+comment8.params=ghost\ count
+comment8.target=void\ moveSteps(Ghost,\ int)
+comment8.text=\r\n\ Move\ the\ Ghost\ a\ number\ of\ steps\ forward\r\n\ @param\ ghost\ the\ ghost\ that\ should\ move\r\n\ @param\ count\ the\ number\ of\ "steps"\r\n
+comment9.params=ghost\ count\ ghosts
+comment9.target=void\ moveStepsAware(Ghost,\ int,\ java.util.ArrayList)
+comment9.text=\r\n\ Move\ the\ Ghost\ a\ number\ of\ steps\ forward,\ redrawing\ all\ Ghosts\ in\ case\ they\ collide\r\n\ @param\ ghost\ the\ ghost\ that\ should\ move\r\n\ @param\ count\ the\ number\ of\ "steps"\r\n\ @param\ ghosts\ list\ of\ ghosts\ of\ the\ environment\r\n
+numComments=14
